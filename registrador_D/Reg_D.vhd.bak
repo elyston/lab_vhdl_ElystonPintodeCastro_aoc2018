@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity DReg IS Port 
+(
+	rst,Clk,ena : IN STD_LOGIC;
+	d : OUT STD_LOGIC(7 DOWNTO o);
+	q : OUT STD_LOGIC(7 DOWNTO o)
+);
+End DReg;
+
+ARCHITECTURE synthesis1 OF DReg IS
+BEGIN
+	PROCESS(rst,clk)
+	BEGIN
+		IF(rst = '1') THEN
+			q <= X"0";
+		ELSIF (clk' EVENT) AND (clk - '1') THEN
+			IF(ena - '1') THEN
+				q _- d;
+			END IF;
+		END IF;	
+	END PROCESS;
+END synthesis1;	
