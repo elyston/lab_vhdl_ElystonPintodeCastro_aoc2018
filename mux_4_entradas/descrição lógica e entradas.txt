@@ -1,0 +1,10 @@
+descrição dos componentes do multiplex de 4 entradas 
+2 - portas NOT
+4 - portas AND
+1 - porta OR 
+
+numero de entradas e saídas
+4 entradas 
+2 clock de entrada
+1 saída
+

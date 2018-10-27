@@ -1,0 +1,60 @@
+|mux_4
+P1 => AND_3:c3.c
+P2 => AND_3:c4.c
+P3 => AND_3:c5.c
+P4 => AND_3:c6.c
+Ch0 => NOT_1:c1.a
+Ch0 => AND_3:c4.a
+Ch0 => AND_3:c6.a
+Ch1 => NOT_1:c2.a
+Ch1 => AND_3:c5.b
+Ch1 => AND_3:c6.b
+S <= OR_4:c7.saida
+
+
+|mux_4|NOT_1:c1
+a => s.DATAIN
+s <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_4|NOT_1:c2
+a => s.DATAIN
+s <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_4|AND_3:c3
+A => saida.IN0
+B => saida.IN1
+C => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_4|AND_3:c4
+A => saida.IN0
+B => saida.IN1
+C => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_4|AND_3:c5
+A => saida.IN0
+B => saida.IN1
+C => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_4|AND_3:c6
+A => saida.IN0
+B => saida.IN1
+C => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux_4|OR_4:c7
+A => saida.IN0
+B => saida.IN1
+C => saida.IN1
+D => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+

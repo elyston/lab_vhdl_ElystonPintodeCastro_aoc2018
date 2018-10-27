@@ -1,0 +1,11 @@
+entity NOT_1 IS 
+BEGIN
+(
+	a : in bit
+	s : out bit
+);
+end NOT_1;
+architecture Default of NOT_1 is 
+begin
+	s <= not a;
+end Default;

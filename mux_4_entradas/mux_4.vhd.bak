@@ -1,0 +1,16 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+Entity Mux4 IS 
+Port
+(
+	P1,P2,P3,P4,Chave : IN STD_LOGIC;
+	S : OUT STD_LOGIC
+);
+END Mux4;
+
+Entity QAnd 
+
+ARCHITECTURE circuito OF Mux4 IS 
+BEGIN
+	S <= (

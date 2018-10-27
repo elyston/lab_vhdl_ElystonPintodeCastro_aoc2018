@@ -1,0 +1,10 @@
+entity OR_4 is
+port
+(
+	A,B,C,D : IN BIT;
+	saida : OUT BIT
+);
+architecture Mux_4 of OR_4 IS
+BEGIN
+	saida <= A or B or C or D;
+END Mux_4;
