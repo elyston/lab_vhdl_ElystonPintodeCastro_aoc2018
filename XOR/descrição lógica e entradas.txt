@@ -1,0 +1,8 @@
+portas lógicas 
+1 not
+2 and
+1 or
+
+numero de entradas e saídas
+2 entradas (P1, P2)
+1 saída (saida)

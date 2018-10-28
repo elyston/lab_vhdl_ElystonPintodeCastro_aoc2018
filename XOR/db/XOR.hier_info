@@ -1,0 +1,31 @@
+|porta_XOR
+P1 => AND_2:E1.a
+P1 => OR_2:E2.a
+P2 => AND_2:E1.b
+P2 => OR_2:E2.b
+saida <= OR_2:E4.s
+
+
+|porta_XOR|AND_2:E1
+a => s.IN0
+b => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|porta_XOR|OR_2:E2
+a => s.IN0
+b => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|porta_XOR|NOT_1:E3
+a => s.DATAIN
+s <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|porta_XOR|OR_2:E4
+a => s.IN0
+b => s.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
